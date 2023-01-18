@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500;600;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* vars  */
+:root {
+  /* base vars */
+  --seagreen: #23b296;
+  --bgWhite: white;
+  --bgBlack: black;
+  --textWhite: white;
+  --textBlack: black;
+  /* base vars */
+  /* dark theme vars */
+  --darkBg: #1a1c52;
+  --darkAccentOne: #bb86fc;
+  --darkAccentTwo: #3700b3;
+  --darkAccentThree: #03dac5;
+  /* dark theme vars */
+}
+
+/* vars end */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+/* scrollbar styling */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #686868 #2e2e2e;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(75, 75, 75, 0.274);
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(63, 80, 99, 0.397);
+  border-radius: 60px;
+  border: white;
+  opacity: 0;
+}
+
+/* scrollbar styling end  */
+.nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 10rem 3rem 10rem;
+  z-index: 98;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
+  padding-right: 10px;
+  gap: 20px;
+}
+
+.logo-container {
+  height: 50px;
+  width: 150px;
+  padding: 0 1rem 0 1rem;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+/* burger styling  */
+#burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29px;
+  height: 29px;
+}
+
+/* Theme color settings  */
+.light {
+  color: var(--textBlack);
+  fill: var(--textBlack);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.dark {
+  color: var(--darkAccentOne);
+  fill: var(--darkAccentOne);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.light-svg {
+  stroke: var(--textBlack);
+}
+
+.dark-svg {
+  stroke: var(--darkAccentOne);
+}
+
+.light-bg {
+  background-color: var(--textBlack);
+}
+
+.dark-bg {
+  background-color: var(--darkAccentOne);
+}
+
+/* Theme color settings  */
+.line-one-high {
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+}
+
+.line-two-high {
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+}
+
+.line-three-high {
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+}
+
+.line-four-high {
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+}
+
+#burger:hover .line-one-high {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+#burger:hover .line-two-high {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+/* burger styling end  */
+.section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio {
+  margin: 0 20% 0 20%;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 18%;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section > h1,
+p {
+  z-index: 2;
+}
+
+.animation-position-container {
+  position: absolute;
+  z-index: 1;
+  top: 26%;
+  right: 17%;
+}
+
+.hero-section > * {
+  text-align: left;
+}
+
+.title {
+  font-family: "Andada Pro", serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.sub-title {
+  font-family: "Andada Pro", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.test {
+  padding: 0;
+}
+
+.burger-button {
+  background-color: transparent;
+  border: none;
+}
+
+.burger-button:hover {
+  cursor: pointer;
+}
+
+.nav-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--seagreen);
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.nav-overlay-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6rem 10rem 3rem 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 10px;
+}
+
+.logo-x {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+}
+
+.logo-x:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* media query notes  */
+/* use 3 rem for small devices on margin playaround */
+/*# sourceMappingURL=index.css.map */

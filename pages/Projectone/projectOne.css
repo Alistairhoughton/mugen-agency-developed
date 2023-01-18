@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.main-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-nav {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  margin-left: 50px;
+  width: auto;
+  height: auto;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  margin-left: 110px;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+}
+
+.nav-link-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  padding: 40px 40px 40px 0;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  padding: 17px 0 17px 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.decoration {
+  height: 1px;
+  width: 8px;
+  border-radius: 1px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  cursor: pointer;
+  opacity: 50%;
+  -webkit-animation-name: grow-out;
+          animation-name: grow-out;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+}
+
+.list-text {
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.nav-link-holder:hover .list-text {
+  opacity: 50%;
+}
+
+.nav-link:hover .list-text {
+  opacity: 100%;
+}
+
+.nav-link:hover .decoration {
+  opacity: 100%;
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.active > .nav-link .decoration {
+  opacity: 100%;
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.active > .nav-link .list-text {
+  opacity: 100%;
+}
+
+@-webkit-keyframes grow {
+  from {
+    width: 8px;
+    opacity: 50%;
+  }
+  50% {
+    width: 25px;
+    opacity: 100%;
+  }
+  to {
+    width: 22px;
+    opacity: 100%;
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 8px;
+    opacity: 50%;
+  }
+  50% {
+    width: 25px;
+    opacity: 100%;
+  }
+  to {
+    width: 22px;
+    opacity: 100%;
+  }
+}
+
+/* animation  */
+@-webkit-keyframes grow-out {
+  from {
+    width: 22px;
+    opacity: 100%;
+  }
+  to {
+    width: 8px;
+    opacity: 50%;
+  }
+}
+@keyframes grow-out {
+  from {
+    width: 22px;
+    opacity: 100%;
+  }
+  to {
+    width: 8px;
+    opacity: 50%;
+  }
+}
+/*# sourceMappingURL=ProjectOne.css.map */
