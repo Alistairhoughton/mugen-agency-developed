@@ -64,6 +64,10 @@ themeHandler = () => {
   }
 };
 
+window.onload = function () {
+  themeHandler;
+};
+
 // event listeners
 
 document.addEventListener("DOMContentLoaded", themeHandler);
